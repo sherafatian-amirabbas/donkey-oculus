@@ -36,6 +36,10 @@ config/name="Project"
 run/main_scene="res://Spatial.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/width=800
+
 [gdnative]
 
 singletons=[ "res://addons/godot_ovrmobile/godot_ovrmobile.gdnlib" ]

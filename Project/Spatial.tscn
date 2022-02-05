@@ -11,4 +11,5 @@ script = ExtResource( 1 )
 [node name="ARVRCamera" type="ARVRCamera" parent="ARVROrigin"]
 
 [node name="Sprite3D" type="Sprite3D" parent="ARVROrigin/ARVRCamera"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.849595 )
 script = ExtResource( 2 )

@@ -1,0 +1,9 @@
+C:\Users\amirabba\Desktop\donkey-oculus\Project\.mono\temp\bin\ExportDebug\Project.dll
+C:\Users\amirabba\Desktop\donkey-oculus\Project\.mono\temp\bin\ExportDebug\Project.pdb
+C:\Users\amirabba\Desktop\donkey-oculus\Project\.mono\temp\obj\ExportDebug\Project.csproj.AssemblyReference.cache
+C:\Users\amirabba\Desktop\donkey-oculus\Project\.mono\temp\obj\ExportDebug\Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amirabba\Desktop\donkey-oculus\Project\.mono\temp\obj\ExportDebug\Project.AssemblyInfoInputs.cache
+C:\Users\amirabba\Desktop\donkey-oculus\Project\.mono\temp\obj\ExportDebug\Project.AssemblyInfo.cs
+C:\Users\amirabba\Desktop\donkey-oculus\Project\.mono\temp\obj\ExportDebug\Project.csproj.CoreCompileInputs.cache
+C:\Users\amirabba\Desktop\donkey-oculus\Project\.mono\temp\obj\ExportDebug\Project.dll
+C:\Users\amirabba\Desktop\donkey-oculus\Project\.mono\temp\obj\ExportDebug\Project.pdb

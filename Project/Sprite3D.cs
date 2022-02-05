@@ -10,10 +10,12 @@ public class Sprite3D : Godot.Sprite3D
     public override void _Ready()
     {
         ws = new WebSocketClient();
-        GD.Print("connection: " + ws.ConnectToUrl(URL) + "!");
 
         ws.Connect("connection_established", this, "_connected");
+        ws.Connect("connection_error", this, "_on_connection_error");
         ws.Connect("data_received", this, "_on_received_data");
+        
+        GD.Print("connection: " + ws.ConnectToUrl(URL) + "!");
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -25,6 +27,11 @@ public class Sprite3D : Godot.Sprite3D
     public void _connected(string proto = "")
     {
         GD.Print("connection established !!");
+    }
+
+    public void _on_connection_error()
+    {
+        GD.Print("connection error !!");
     }
 
     public void _on_received_data()

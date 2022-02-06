@@ -26,7 +26,7 @@ public class Sprite3D : Godot.Sprite3D
 
     public void _connected(string proto = "")
     {
-        GD.Print("connection established !!");
+        GD.Print("connection established - camera !!");
     }
 
     public void _on_connection_error()

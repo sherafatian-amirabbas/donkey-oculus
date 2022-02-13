@@ -79,7 +79,7 @@ public class ARVROrigin : Godot.ARVROrigin
             var leftPadIndex = 0;
             var rightPadIndex = 1;
 
-            var threshold = 0.90;
+            var threshold = 0.60;
 
 
             bool toTheLeft = false;

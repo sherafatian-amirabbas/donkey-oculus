@@ -9,14 +9,11 @@
 script = ExtResource( 1 )
 
 [node name="ARVROrigin" type="ARVROrigin" parent="."]
+transform = Transform( -0.783249, 0, 0.621708, 0, 1, 0, -0.621708, 0, -0.783249, 0, 5, 0 )
 script = ExtResource( 4 )
 
 [node name="ARVRCamera" type="ARVRCamera" parent="ARVROrigin"]
-
-[node name="Sprite3D" type="Sprite3D" parent="ARVROrigin/ARVRCamera"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0204327, 0.356163, -1.92713 )
-texture = ExtResource( 3 )
-script = ExtResource( 2 )
+transform = Transform( 0.99622, -0.0632315, 0.0595687, 0.0583877, 0.995098, 0.0798162, -0.0643236, -0.0760364, 0.995028, 8.51, -6.88, 1.35 )
 
 [node name="ARVRController_Left" type="ARVRController" parent="ARVROrigin"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.113672, 0.274713, -0.332977 )
@@ -24,3 +21,10 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.113672, 0.274713, -0.332977 
 [node name="ARVRController_Right" type="ARVRController" parent="ARVROrigin"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.370641, 0.275, -0.29956 )
 controller_id = 2
+
+[node name="Sprite3D" type="Sprite3D" parent="ARVROrigin"]
+transform = Transform( 144.838, -2.40049, 0.244751, 6.57202, 63.998, -3.5535, -1.96675, 37.0741, 6.14997, -22, 22, -65 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 63, 64 )
+script = ExtResource( 2 )

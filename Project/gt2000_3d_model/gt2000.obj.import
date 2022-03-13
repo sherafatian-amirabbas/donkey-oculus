@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/gt2000.obj-c8f74a13baac2887b875046d74191450.mesh"
+
+[deps]
+
+files=[ "res://.import/gt2000.obj-c8f74a13baac2887b875046d74191450.mesh" ]
+
+source_file="res://gt2000_3d_model/gt2000.obj"
+dest_files=[ "res://.import/gt2000.obj-c8f74a13baac2887b875046d74191450.mesh", "res://.import/gt2000.obj-c8f74a13baac2887b875046d74191450.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

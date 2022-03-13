@@ -1,9 +1,17 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Spatial.gd" type="Script" id=1]
 [ext_resource path="res://Sprite3D.cs" type="Script" id=2]
 [ext_resource path="res://icon.png" type="Texture" id=3]
 [ext_resource path="res://ARVROrigin.cs" type="Script" id=4]
+[ext_resource path="res://gt2000_3d_model/Textures/Body/body.tres" type="Material" id=5]
+[ext_resource path="res://gt2000_3d_model/gt2000.obj" type="ArrayMesh" id=6]
+[ext_resource path="res://gt2000_3d_model/Textures/Glasses/glasses.tres" type="Material" id=7]
+[ext_resource path="res://gt2000_3d_model/Textures/Wheel/wheel.tres" type="Material" id=8]
+[ext_resource path="res://gt2000_3d_model/Textures/LampTurn/lamp_turn.tres" type="Material" id=9]
+[ext_resource path="res://gt2000_3d_model/Textures/LampFront/lamp_front.tres" type="Material" id=10]
+[ext_resource path="res://gt2000_3d_model/Textures/LampRear/lamp_rear.tres" type="Material" id=11]
+[ext_resource path="res://gt2000_3d_model/Textures/LampGabarits/lamp_gabarits.tres" type="Material" id=12]
 
 [node name="Spatial" type="Spatial"]
 script = ExtResource( 1 )
@@ -13,7 +21,7 @@ transform = Transform( -0.783249, 0, 0.621708, 0, 1, 0, -0.621708, 0, -0.783249,
 script = ExtResource( 4 )
 
 [node name="ARVRCamera" type="ARVRCamera" parent="ARVROrigin"]
-transform = Transform( 0.627164, 0.0753897, -0.77523, 0, 0.995305, 0.0967915, 0.778887, -0.0607041, 0.624219, -22.8492, 17.603, 10.9008 )
+transform = Transform( 0.990389, 0.00761125, -0.138102, 0, 0.998485, 0.0550298, 0.138312, -0.0545009, 0.988888, -4.27838, 21.1734, 14.9632 )
 far = 400.0
 
 [node name="ARVRController_Left" type="ARVRController" parent="ARVROrigin"]
@@ -24,7 +32,24 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.370641, 0.275, -0.29956 )
 controller_id = 2
 
 [node name="Sprite3D" type="Sprite3D" parent="ARVROrigin"]
-transform = Transform( 220, 0, 0, 0, 195, 0, 0, 0, 0, 2.841, 20, -240.117 )
+transform = Transform( 220, 0, 0, 0, 195, 0, 0, 0, 0, 100, 20, -160 )
 texture = ExtResource( 3 )
 region_rect = Rect2( 0, 0, 63, 64 )
 script = ExtResource( 2 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="ARVROrigin"]
+transform = Transform( -0.918604, 0.0316548, 0.39391, 0.395026, 0.101371, 0.91306, -0.0110285, 0.994345, -0.105625, 10.607, 24.5368, 54.4837 )
+visible = false
+light_energy = 7.0
+
+[node name="gt2000" type="MeshInstance" parent="ARVROrigin"]
+transform = Transform( -19.997, 0, -0.348001, 0, 20, 0, 0.348001, 0, -19.997, 7.3, -18, -13 )
+mesh = ExtResource( 6 )
+material/0 = ExtResource( 5 )
+material/1 = ExtResource( 7 )
+material/2 = ExtResource( 11 )
+material/3 = ExtResource( 10 )
+material/4 = ExtResource( 9 )
+material/5 = ExtResource( 12 )
+material/6 = ExtResource( 11 )
+material/7 = ExtResource( 8 )

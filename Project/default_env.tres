@@ -5,4 +5,3 @@
 [resource]
 background_mode = 3
 background_sky = SubResource( 1 )
-background_sky_orientation = Basis( 0, 0, 0, 0, 0, 0, 0, 0, 0 )

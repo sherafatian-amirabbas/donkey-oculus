@@ -1,11 +1,8 @@
-[gd_resource type="Environment" load_steps=3 format=2]
+[gd_resource type="Environment" load_steps=2 format=2]
 
-[ext_resource path="res://yaris_interior_garage_4k.exr" type="Texture" id=1]
-
-[sub_resource type="PanoramaSky" id=1]
-panorama = ExtResource( 1 )
+[sub_resource type="ProceduralSky" id=1]
 
 [resource]
-background_mode = 2
+background_mode = 3
 background_sky = SubResource( 1 )
-background_sky_orientation = Basis( 0.996195, -0.0871557, 0, 0.0858316, 0.98106, -0.173648, 0.0151344, 0.172987, 0.984808 )
+background_sky_orientation = Basis( 0, 0, 0, 0, 0, 0, 0, 0, 0 )

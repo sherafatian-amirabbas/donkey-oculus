@@ -13,7 +13,8 @@ transform = Transform( -0.783249, 0, 0.621708, 0, 1, 0, -0.621708, 0, -0.783249,
 script = ExtResource( 4 )
 
 [node name="ARVRCamera" type="ARVRCamera" parent="ARVROrigin"]
-transform = Transform( 0.99622, -0.0632315, 0.0595687, 0.0583877, 0.995098, 0.0798162, -0.0643236, -0.0760364, 0.995028, 8.51, -6.88, 1.35 )
+transform = Transform( 0.627164, 0.0753897, -0.77523, 0, 0.995305, 0.0967915, 0.778887, -0.0607041, 0.624219, -22.8492, 17.603, 10.9008 )
+far = 400.0
 
 [node name="ARVRController_Left" type="ARVRController" parent="ARVROrigin"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.113672, 0.274713, -0.332977 )
@@ -23,7 +24,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.370641, 0.275, -0.29956 )
 controller_id = 2
 
 [node name="Sprite3D" type="Sprite3D" parent="ARVROrigin"]
-transform = Transform( 49.9315, -2.09344, 0, 2.45899, 37.5362, 0, 0.894998, 13.6621, 0, -22, 10, -70 )
+transform = Transform( 220, 0, 0, 0, 195, 0, 0, 0, 0, 2.841, 20, -240.117 )
 texture = ExtResource( 3 )
 region_rect = Rect2( 0, 0, 63, 64 )
 script = ExtResource( 2 )

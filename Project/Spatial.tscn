@@ -32,15 +32,10 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.370641, 0.275, -0.29956 )
 controller_id = 2
 
 [node name="Sprite3D" type="Sprite3D" parent="ARVROrigin"]
-transform = Transform( 220, 0, 0, 0, 195, 0, 0, 0, 0, 100, 20, -160 )
+transform = Transform( 220, 0, 0, 0, 195, 0, 0, 0, 0, 90, 20, -190 )
 texture = ExtResource( 3 )
 region_rect = Rect2( 0, 0, 63, 64 )
 script = ExtResource( 2 )
-
-[node name="DirectionalLight" type="DirectionalLight" parent="ARVROrigin"]
-transform = Transform( -0.918604, 0.0316548, 0.39391, 0.395026, 0.101371, 0.91306, -0.0110285, 0.994345, -0.105625, 10.607, 24.5368, 54.4837 )
-visible = false
-light_energy = 7.0
 
 [node name="gt2000" type="MeshInstance" parent="ARVROrigin"]
 transform = Transform( -19.997, 0, -0.348001, 0, 20, 0, 0.348001, 0, -19.997, 7.3, -18, -13 )

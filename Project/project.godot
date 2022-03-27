@@ -44,6 +44,13 @@ window/size/width=800
 
 singletons=[ "res://addons/godot_ovrmobile/godot_ovrmobile.gdnlib" ]
 
+[network]
+
+limits/websocket_client/max_in_buffer_kb=2048
+limits/websocket_client/max_in_packets=4096
+limits/websocket_client/max_out_buffer_kb=2048
+limits/websocket_client/max_out_packets=4096
+
 [physics]
 
 common/enable_pause_aware_picking=true

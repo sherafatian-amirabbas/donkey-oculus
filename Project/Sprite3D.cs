@@ -3,7 +3,8 @@ using System;
 
 public class Sprite3D : Godot.Sprite3D
 {
-    private string URL = "ws://192.168.1.9:8887/wsVideo";
+    //private string URL = "ws://192.168.1.9:8080/wsVideo";
+    private string URL = "ws://192.168.137.180:8080/wsVideo";
     private WebSocketClient ws;
 
     // Called when the node enters the scene tree for the first time.

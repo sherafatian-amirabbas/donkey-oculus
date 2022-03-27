@@ -36,7 +36,7 @@ public class ARVROrigin : Godot.ARVROrigin
 
 
         ws = new WebSocketClient();
-        GD.Print("connection: " + ws.ConnectToUrl(URL) + "!");
+        GD.Print("connection - drive: " + ws.ConnectToUrl(URL) + "!");
 
         ws.Connect("connection_established", this, "_connected");
     }
@@ -204,7 +204,7 @@ public class ARVROrigin : Godot.ARVROrigin
 
     public void _on_button_pressed(int button, string deviceName)
     {
-        GD.Print($"_on_button_pressed ({deviceName}), id: {button} -  name: {Input.GetJoyButtonString(button)}");
+        // GD.Print($"_on_button_pressed ({deviceName}), id: {button} -  name: {Input.GetJoyButtonString(button)}");
     }
 
 

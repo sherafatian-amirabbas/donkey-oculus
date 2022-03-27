@@ -24,7 +24,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.370641, 0.275, -0.29956 )
 controller_id = 2
 
 [node name="Sprite3D" type="Sprite3D" parent="ARVROrigin"]
-transform = Transform( 79.8485, -3.68384, 0, 3.8249, 56.5622, 0, 3.09698, 25.1226, 0, -35, 13.2, -100 )
+transform = Transform( 44.9254, -1.81327, 0, 2.4636, 29.9086, 0, 0.800472, 9.71789, 0, -36, 15, -105 )
 texture = ExtResource( 3 )
 region_rect = Rect2( 0, 0, 63, 64 )
 script = ExtResource( 2 )

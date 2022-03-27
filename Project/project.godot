@@ -39,6 +39,7 @@ config/icon="res://icon.png"
 [display]
 
 window/size/width=800
+window/vsync/use_vsync=false
 
 [gdnative]
 

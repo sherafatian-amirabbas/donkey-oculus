@@ -16,7 +16,7 @@ public class Sprite3D : Godot.Sprite3D
         ws.Connect("connection_error", this, "_on_connection_error");
         ws.Connect("data_received", this, "_on_received_data");
         
-        GD.Print("connection: " + ws.ConnectToUrl(URL) + "!");
+        GD.Print("connection - camera: " + ws.ConnectToUrl(URL) + "!");
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -32,20 +32,20 @@ public class Sprite3D : Godot.Sprite3D
 
     public void _on_connection_error()
     {
-        GD.Print("connection error !!");
+        GD.Print("connection error - camera !!");
     }
 
     public void _on_received_data()
     {
         var img_bytes = ws.GetPeer(1).GetPacket();
         var image = new Image();
+
         var error = image.LoadJpgFromBuffer(img_bytes);
         if (error != Error.Ok)
             GD.PushError("Couldn't load the image.");
 
         var texture = new ImageTexture();
         texture.CreateFromImage(image);
-
         this.Texture = texture;
     }
 }
